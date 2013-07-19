@@ -2,7 +2,11 @@
 
 // choose the environment, and add the additional configuration for that environment as well
 // This file is usually something like typo3conf/AdditionalConfiguration.Preview.php
+<<<<<<< HEAD
 // the context is set via .htaccess or web server configuration like 
+=======
+// the context is set via .htaccess or web server configuration like
+>>>>>>> [TASK] Initial commit, added documentation
 // SetEnv TYPO3_ENVIRONMENT preview
 if (isset($_SERVER['TYPO3_ENVIRONMENT'])) {
 	$environment = strtolower($_SERVER['TYPO3_ENVIRONMENT']);

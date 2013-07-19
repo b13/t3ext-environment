@@ -1,6 +1,12 @@
-Installation
-============
+# TYPO3 Extension "environment"
 
+## What does it do?
+
+The extension detects a specific environment variable from the webserver or
+the command line and allows to load specific parameters, configuration options
+or TypoScript configurations.
+
+# Installation
 
 Add this to your .htaccess file
 
@@ -14,7 +20,7 @@ Add this to your typo3conf/AdditionalConfiguration.php
 	include('ext/environment/Includes/Bootstrap/LoadEnvironment.php');
 
 
-Create Environment specific configurations, files like
+Create Environment specific configurations, files named like
 
  * typo3conf/AdditionalConfiguration.Integration.php
  * typo3conf/AdditionalConfiguration.Development.php
@@ -28,45 +34,40 @@ After that, you have a PHP constant named "TYPO3_ENVIRONMENT" that
 is set to the environment variable placed in your server settings.
 
 
-Best practices
---------------
+## Best practices
 
-Development Environment
+### Development Environment
  * mails should only be sent locally
  * all debug modes are set to full logging
  * caching is disabled by default
 
-Integration Environment
+### Integration Environment
  * testing environment for unit tests
 
-Preview Environment
+### Preview Environment
  * instance for clients to test the site
 
-Production Environment
+### Production Environment
  * "Live" server
-
 
 Of course any other environment name can be chosen.
 
 
-Setting the environment for scheduler tasks 
--------------------------------------------
+## Setting the environment for scheduler tasks
 
 Usually the TYPO3 scheduler is called like this:
 
-/usr/bin/php5 /path/to/my/typo3/installation/typo3/cli_dispatch.phpsh scheduler
+	/usr/bin/php5 /path/to/my/typo3/installation/typo3/cli_dispatch.phpsh scheduler
 
 this should be modified at all times to set the environment variable
 
-/usr/bin/php5 /path/to/my/typo3/installation/typo3/cli_dispatch.phpsh scheduler --environment=preview
+	/usr/bin/php5 /path/to/my/typo3/installation/typo3/cli_dispatch.phpsh scheduler --environment=preview
 
 
-
-Environment-dependent TypoScript
---------------------------------
+## Environment-dependent TypoScript
 You can check the environment with the following TypoScript condition.
 
-# disable tracking for preview machine
-[globalString = IENV:TYPO3_ENVIRONMENT = preview]
-	page.20 >
-[GLOBAL]
+	# disable tracking for preview machine
+	[globalString = IENV:TYPO3_ENVIRONMENT = preview]
+		page.20 >
+	[GLOBAL]
