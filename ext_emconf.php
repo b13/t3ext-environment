@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Environment Settings',
-	'description' => 'Allows to set environment variables and have specific configuration options depending on the ENV variables.',
+	'description' => 'Allows to set environment-specific context variables and have specific configuration options depending on the ENV variables.',
 	'category' => 'misc',
 	'author' => 'b:dreizehn GmbH',
 	'author_email' => 'typo3@b13.de',
@@ -32,7 +32,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.0.0-6.1.99',
+			'typo3' => '4.5.0-6.1.99',
 		),
 		'conflicts' => array(
 		),

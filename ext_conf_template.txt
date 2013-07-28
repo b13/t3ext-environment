@@ -1,0 +1,8 @@
+	# cat=Context; type=string; label=LLL:EXT:environment/Resources/Private/Language/locallang.xml:extensionConfiguration.forceContext
+forceContext =
+
+	# cat=Context; type=string; label=LLL:EXT:environment/Resources/Private/Language/locallang.xml:extensionConfiguration.fallbackContext
+fallbackContext =
+
+	# cat=Email; type=string; label=LLL:EXT:environment/Resources/Private/Language/locallang.xml:extensionConfiguration.redirectEmails
+redirectEmails = development@b13.de

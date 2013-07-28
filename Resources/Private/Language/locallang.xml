@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for extension 'environment'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="extensionConfiguration.forceContext">Force Context regardless of environment variables</label>
+			<label index="extensionConfiguration.fallbackContext">Fallback Context if none is found (useful for legacy extensions, leave empty to require the Context variable set)</label>
+			<label index="extensionConfiguration.redirectEmails">Redirect all outgoing emails to this email address (comma-separate for more)</label>
+		</languageKey>
+	</data>
+</T3locallang>
