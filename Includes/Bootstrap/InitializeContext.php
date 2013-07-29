@@ -15,6 +15,10 @@ $extensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extCon
 if (isset($_SERVER['TYPO3_CONTEXT'])) {
 	$context = $_SERVER['TYPO3_CONTEXT'];
 
+// for web servers with CGI
+} elseif ($_SERVER['REDIRECT_TYPO3_CONTEXT']) {
+	$context = $_SERVER['REDIRECT_TYPO3_CONTEXT'];
+
 } elseif (getenv('TYPO3_CONTEXT')) {
 	$context = getenv('TYPO3_CONTEXT');
 
