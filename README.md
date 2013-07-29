@@ -120,8 +120,11 @@ following TYPO3_CONF_VARS option:
 
 $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['environment']['redirectEmails'] = 'benni@typo3.org';
 
+You can add multiple addresses separated via comma, or in a simple array.
+
 It makes most sense if you put this in a environment-dependent installation like
-typo3conf/AdditionalConfiguration.Development.php.
+typo3conf/AdditionalConfiguration.Development.php and remove it in the
+Production environment settings.
 
 
 Thanks
