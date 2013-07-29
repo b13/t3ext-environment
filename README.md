@@ -105,12 +105,12 @@ Environment-dependent TypoScript
 --------------------------------
 You can check the environment with the following TypoScript condition.
 
-# disable tracking for preview machine
-[globalString = IENV:TYPO3_CONTEXT = Integration/Preview]
-	page.20 >
-[GLOBAL]
+	# disable tracking for preview machine
+	[globalString = IENV:TYPO3_CONTEXT = Integration/Preview]
+		page.20 >
+	[GLOBAL]
 
-With TYPO3 6.2, you can use the newly defined "context" and "contextMatch" TypoScript conditions.
+With TYPO3 CMS 6.2, you can use the newly defined "context" and "contextMatch" TypoScript conditions.
 
 
 Environment-dependent email redirection
