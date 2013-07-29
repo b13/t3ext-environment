@@ -18,7 +18,7 @@ if (isset($_SERVER['TYPO3_CONTEXT'])) {
 } elseif (getenv('TYPO3_CONTEXT')) {
 	$context = getenv('TYPO3_CONTEXT');
 
-// check for command line parameter --context
+// check for command line parameter --context=Production
 } elseif ($_SERVER['argc'] > 0) {
 	// find --context=Production from the command line
 	foreach ($_SERVER['argv'] as $argumentValue) {
@@ -75,16 +75,6 @@ if (!empty($context)) {
 
 	// since there is no unified hook available for 4.5 and 6.0 during bootstrap,
 	// all necessary handlers are set up at this point
-
-
-	// check if a swiftmailer plugins needs to be added to redirect all emails to a separate email address,
-	// due to uncool implementation in TYPO3 Core, this needs to be done via XCLASS currently
-	// the XCLASS for 4.x is registered in ext_localconf.php
-	if (!empty($extensionConfiguration['redirectEmails'])) {
-		$GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Core\\Mail\\Mailer'] = array(
-			'className' => 'B13\\Environment\\Mail\\SwiftMailer'
-		);
-	}
 
 } else {
 
