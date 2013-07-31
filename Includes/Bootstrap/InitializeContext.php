@@ -53,9 +53,6 @@ if (!empty($context)) {
 	$_SERVER['TYPO3_CONTEXT'] = $context;
 	putenv('TYPO3_CONTEXT=' . $context);
 
-	// add the context information to the site name
-	$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' - ' . $context;
-
 	// check for "Production/Live/Server1" etc
 	list($contextMainPart, $contextSubPart1, $contextSubPart2)  = explode('/', $context);
 
@@ -76,6 +73,9 @@ if (!empty($context)) {
 	if (file_exists($additionalContextConfiguration)) {
 		require_once($additionalContextConfiguration);
 	}
+
+	// add the context information to the site name
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] .= ' - ' . $context;
 
 	// since there is no unified hook available for 4.5 and 6.0 during bootstrap,
 	// all necessary handlers are set up at this point
