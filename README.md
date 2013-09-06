@@ -21,11 +21,13 @@ Installation
 
 1) Install the extension.
 
-2) Add the following line to your .htaccess file or your Apache webserver
-configuration.
+2) Add the following Rewrite statements to your .htaccess file after the RewriteBase
+statement or to your Apache webserver configuration.
 
-	# Make sure the context variable is set
-	SetEnv TYPO3_CONTEXT Production/Live/Server1
+	# Make sure the context variable is set with every http request
+  RewriteCond %{HTTP_HOST} ^(.*)your.host.name.com$
+  RewriteRule (.*) $1 [E=TYPO3_CONTEXT:Development]
+
 
 
 3) Add the following code to your typo3conf/AdditionalConfiguration.php for
