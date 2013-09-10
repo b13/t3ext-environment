@@ -24,9 +24,9 @@ Installation
 2) Add the following Rewrite statements to your .htaccess file after the RewriteBase
 statement or to your Apache webserver configuration.
 
-	# Make sure the context variable is set with every http request
-  RewriteCond %{HTTP_HOST} ^(.*)your.host.name.com$
-  RewriteRule (.*) $1 [E=TYPO3_CONTEXT:Development]
+    # Make sure the context variable is set with every http request
+    RewriteCond %{HTTP_HOST} ^(.*)your.host.name.com$
+    RewriteRule (.*) $1 [E=TYPO3_CONTEXT:Development]
 
 
 
