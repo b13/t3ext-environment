@@ -56,7 +56,8 @@ is set to the environment variable placed in your server settings.
 
 and add configuration options like different DB settings and debugging
 settings, that get included depending on what context you have set in your
-server settings.
+server settings. Examples are provided in 
+[Resources/Public/Examples](https://github.com/b13/t3ext-environment/tree/master/Resources/Public/Examples).
 
 Please make sure that the PHP files always start with the following lines
 
