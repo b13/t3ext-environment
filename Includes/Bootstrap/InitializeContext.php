@@ -31,7 +31,14 @@ if (isset($_SERVER['TYPO3_CONTEXT'])) {
 			break;
 		}
 	}
+
+// check if there is a file, outside of the htdocs/ directory
+// it is outside the htdocs/ directory so it is not attached to the rest
+// of the application
+} else if (is_file(PATH_site . '../TYPO3_CONTEXT')) {
+	$context = trim(file_get_contents(PATH_site . '../TYPO3_CONTEXT'));
 }
+
 
 
 // possibility to override the context (via extension configuration)
