@@ -31,7 +31,7 @@ statement or to your Apache webserver configuration.
 
 
 3) Add the following code to your typo3conf/AdditionalConfiguration.php for
-TYPO3 CMS 6.0
+TYPO3 CMS 6.0 / 6.1
 
 	// load the environment / context configuration for this installation
 	if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('environment')) {
@@ -44,6 +44,11 @@ TYPO3 CMS 6.0
 	if (t3lib_extMgm::isLoaded('environment')) {
 		include('ext/environment/Includes/Bootstrap/InitializeContext.php');
 	}
+
+3b) For installations using TYPO3 CMS 6.2+, just add this to your typo3conf/AdditionalConfiguration.php
+
+	// load the environment / context configuration for this installation
+	include('ext/environment/Includes/Bootstrap/InitializeContext.php');
 
 After that, you have a PHP constant named "TYPO3_CONTEXT" that
 is set to the environment variable placed in your server settings.
