@@ -55,7 +55,6 @@ is set to the environment variable placed in your server settings.
 
 4) You can now define context-specific configurations, and create files like
 
- * typo3conf/AdditionalConfiguration.Integration.Preview.php
  * typo3conf/AdditionalConfiguration.Development.php
  * typo3conf/AdditionalConfiguration.Production.php
 
@@ -86,9 +85,9 @@ Integration Environment
 
  * testing environment for unit tests etc.
 
-Integration/Preview Environment
+Production/Staging Environment
 
- * instance for clients to test the site
+ * Clone of the "Live" server for (customer) acceptance testing
 
 Production Environment
  * "Live" server
@@ -113,8 +112,8 @@ Environment-dependent TypoScript
 --------------------------------
 You can check the environment with the following TypoScript condition.
 
-	# disable tracking for preview machine
-	[globalString = IENV:TYPO3_CONTEXT = Integration/Preview]
+	# disable tracking for Production/Staging environment
+	[globalString = IENV:TYPO3_CONTEXT = Production/Staging]
 		page.20 >
 	[GLOBAL]
 
