@@ -9,9 +9,9 @@ $extensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extCon
 
 
 // choose the context, and add the additional configuration for that context as well
-// This file is usually something like typo3conf/AdditionalConfiguration.Preview.php
+// This file is usually something like typo3conf/AdditionalConfiguration.Development.php
 // the context is set via .htaccess or web server configuration like
-// SetEnv TYPO3_CONTEXT Preview
+// SetEnv TYPO3_CONTEXT Development
 if (isset($_SERVER['TYPO3_CONTEXT'])) {
 	$context = $_SERVER['TYPO3_CONTEXT'];
 
