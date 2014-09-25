@@ -25,9 +25,11 @@ Installation
 statement or to your Apache webserver configuration.
 
     # Make sure the context variable is set with every http request
-    RewriteCond %{HTTP_HOST} ^(.*)your.host.name.com$
-    RewriteRule (.*) $1 [E=TYPO3_CONTEXT:Development]
+    RewriteCond %{HTTP_HOST} ^(.*)staging-system\.org$
+    RewriteRule .? - [E=TYPO3_CONTEXT:Production/Staging]
 
+    RewriteCond %{HTTP_HOST} ^(.*)development-system\.org$
+    RewriteRule .? - [E=TYPO3_CONTEXT:Development]
 
 
 3) Add the following code to your typo3conf/AdditionalConfiguration.php for

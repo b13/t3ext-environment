@@ -1,8 +1,8 @@
 <?php
-$GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'prev_db.name';
-$GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'prev_db.host';
-$GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'prev_db.password';
-$GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'prev_db.user';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = '';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = '';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = '';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = '';
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieDomain'] = '.prev.host.tld';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['curlUse'] = '1';

@@ -1,8 +1,8 @@
 <?php
-$GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = 'production_db';
-$GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = 'production_db.host';
-$GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = 'production_db.password';
-$GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = 'production_db.user';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['database'] = '';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['host'] = '';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['password'] = '';
+$GLOBALS['TYPO3_CONF_VARS']['DB']['username'] = '';
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieDomain'] = '.production.host.tld';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['curlUse'] = '1';
