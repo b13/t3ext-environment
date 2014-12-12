@@ -1,0 +1,12 @@
+{
+    "name": "b13/environment",
+    "type": "typo3-cms-extension",
+    "description": "Configure multiple environments for TYPO3",
+    "homepage": "https://github.com/b13/t3ext-environment",
+    "license": ["MIT"],
+    "keywords": ["TYPO3 CMS", "Environment", "Multi Context"],
+    "support": {
+        "support": "https://github.com/b13/t3ext-environment"
+    },
+    "version": "1.0.5"
+}
