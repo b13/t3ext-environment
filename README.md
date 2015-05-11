@@ -8,7 +8,7 @@ What does it do?
 ----------------
 
 The TYPO3 extension "Environment", compatible with TYPO3 CMS 4.5 until
-TYPO3 CMS 6.2, allows for context-specific settings, so the TYPO3
+TYPO3 CMS 7.99.99, allows for context-specific settings, so the TYPO3
 installation has different options for each context. This means that all
 logging and debugging settings can be turned on for the development
 environment.
@@ -33,7 +33,7 @@ statement or to your Apache webserver configuration.
 
 
 3) Add the following code to your typo3conf/AdditionalConfiguration.php for
-TYPO3 CMS 6.0 / 6.1
+TYPO3 CMS >= 6.0
 
 	// load the environment / context configuration for this installation
 	if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('environment')) {
