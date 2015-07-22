@@ -115,7 +115,7 @@ Environment-dependent TypoScript
 You can check the environment with the following TypoScript condition.
 
 	# disable tracking for Production/Staging environment
-	[globalString = IENV:TYPO3_CONTEXT = Production/Staging]
+	[globalString = ENV:TYPO3_CONTEXT = Production/Staging]
 		page.20 >
 	[GLOBAL]
 
