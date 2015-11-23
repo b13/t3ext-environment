@@ -8,13 +8,13 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = '';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = '';
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieDomain'] = '.prev.host.tld';
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieSecure'] = '0';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieSecure'] = '2';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = '2';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '0';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['clearCacheSystem'] = '1';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel'] = '0';
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = ''; 
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['enableDeprecationLog'] = '';
 
 // see http://php.net/manual/en/errorfunc.constants.php
 // default values below

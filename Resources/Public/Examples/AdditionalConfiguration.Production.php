@@ -8,7 +8,7 @@ $GLOBALS['TYPO3_CONF_VARS']['FE']['debug'] = '';
 $GLOBALS['TYPO3_CONF_VARS']['BE']['debug'] = '';
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieDomain'] = '.production.host.tld';
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieSecure'] = '0';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['cookieSecure'] = '2';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['devIPmask'] = '';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['displayErrors'] = '0';
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['sqlDebug'] = '0';
