@@ -119,7 +119,7 @@ You can check the environment with the following TypoScript condition.
 		page.20 >
 	[GLOBAL]
 
-With TYPO3 CMS 6.2, you can use the newly defined "context" and "contextMatch" TypoScript conditions.
+With TYPO3 CMS 6.2, you can use the newly defined "applicationContext" TypoScript condition.
 
 
 Environment-dependent email redirection
