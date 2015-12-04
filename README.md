@@ -62,13 +62,13 @@ is set to the environment variable placed in your server settings.
 
 and add configuration options like different DB settings and debugging
 settings, that get included depending on what context you have set in your
-server settings. Examples are provided in 
+server settings. Examples are provided in
 [Resources/Public/Examples](https://github.com/b13/t3ext-environment/tree/master/Resources/Public/Examples).
 
 Please make sure that the PHP files always start with the following lines
 
 	<?php
-	
+
 	if (!defined('TYPO3_MODE')) {
 		die('Access denied.');
 	}
@@ -77,25 +77,25 @@ Please make sure that the PHP files always start with the following lines
 Best practices
 --------------
 
-Development Environment
+Development Environment "Development"
 
  * mails should only be sent locally
  * all debug modes are set to full logging
  * caching is disabled by default
 
-Integration Environment
+Integration Environment "Testing/Integration"
 
  * testing environment for unit tests etc.
 
-Production/Staging Environment
+"Production/Staging" Environment
 
  * Clone of the "Live" server for (customer) acceptance testing
 
-Production Environment
+"Production" Environment
  * "Live" server
 
 
-Of course any other environment name can be chosen.
+ The top-level contexts, however, must be one of "Testing", "Development" and "Production". Of course any other sub-context name can be chosen.
 
 
 Setting the environment for scheduler tasks
