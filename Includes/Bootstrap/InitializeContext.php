@@ -1,8 +1,6 @@
 <?php
 
-if (!defined('TYPO3_MODE')) {
-	die('Access denied.');
-}
+defined('TYPO3_MODE') or die();
 
 // extract the extension configuration
 $extensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['environment']);
