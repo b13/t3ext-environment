@@ -29,17 +29,16 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '1.0.6',
+	'version' => '1.0.7',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.5.0-7.99.99',
+			'typo3' => '6.2.0-7.99.99',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
 		),
-	),
-	'_md5_values_when_last_written' => 'a:9:{s:12:"ext_icon.gif";s:4:"1bdc";s:17:"ext_localconf.php";s:4:"2657";s:14:"ext_tables.php";s:4:"0c78";s:14:"ext_tables.sql";s:4:"4280";s:38:"icon_tx_dealer_domain_model_dealer.gif";s:4:"475a";s:16:"locallang_db.xml";s:4:"f4a6";s:7:"tca.php";s:4:"ee0d";s:19:"doc/wizard_form.dat";s:4:"f3a7";s:20:"doc/wizard_form.html";s:4:"40a7";}',
+	)
 );
 
 ?>

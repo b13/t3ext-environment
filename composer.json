@@ -8,5 +8,12 @@
     "support": {
         "support": "https://github.com/b13/t3ext-environment"
     },
-    "version": "1.0.7"
+    "replace": {
+        "environment": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "B13\\Environment\\": "Classes/"
+         }
+    }
 }
