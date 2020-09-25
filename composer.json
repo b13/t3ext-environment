@@ -8,12 +8,20 @@
     "support": {
         "support": "https://github.com/b13/t3ext-environment"
     },
+	"require": {
+		"typo3/cms-core": ">=6.2.0 <=7.6.99"
+	},
     "replace": {
-        "environment": "self.version"
+        "typo3-ter/environment": "self.version"
     },
     "autoload": {
         "psr-4": {
             "B13\\Environment\\": "Classes/"
          }
-    }
+    },
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "environment"
+		}
+	}
 }
